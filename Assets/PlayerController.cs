@@ -49,10 +49,6 @@ public class PlayerController : MonoBehaviour
         //_moveAction.performed += HandleMove;
         _interactAction.performed += HandleInteract;
     }
-    private void HandleInteract(InputAction.CallbackContext context)
-    {
-        Debug.Log("Interact");
-    }
 
     private void UnSubscribeControllerEvents()
     {
@@ -84,6 +80,10 @@ public class PlayerController : MonoBehaviour
     private void MovePlayer()
     {
         rb.AddForce(_inputDirection * movementSpeed, ForceMode.Force);
+    }
+    private void HandleInteract(InputAction.CallbackContext context)
+    {
+        Debug.Log("Interact");
     }
 
     /*private void HandleMove(InputAction.CallbackContext context)
