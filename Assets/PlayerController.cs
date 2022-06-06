@@ -120,6 +120,7 @@ namespace Overtrashed.Player
                 {
                     // Set PickUp Animation
                     // Play PickUp Sound
+                    Debug.Log("Pick Up : " + currentPickable.gameObject.name);
                     currentPickable.Pick();
                     interactableController.Remove(currentPickable as Interactable);
                     currentPickable.gameObject.transform.SetPositionAndRotation(slot.position, Quaternion.identity);
@@ -150,13 +151,21 @@ namespace Overtrashed.Player
                 currentPickable = null;
                 return;
             }
+
+            // Check if dropping on the interactable is allowed
+            bool dropSuccess = interactable.TryToDropIntoSlot(currentPickable);
+            if (!dropSuccess) return;
+
+            // Play Drop Animation
+            // Play Drop Sound
+            currentPickable = null;
+
         }
 
         private void CalculateInputDirection()
         {
             inputMovement = _moveAction.ReadValue<Vector2>();
             OptimizeMoveInput();
-            Debug.Log("CalculateInputDirection : " + _inputDirection);
         }
 
         private void OptimizeMoveInput()

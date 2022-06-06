@@ -35,6 +35,16 @@ public class Trash : Interactable, IPickable
         trashStatus = TrashStatus.Dirty;
     }
 
+    public void ChangeToWet()
+    {
+        trashStatus = TrashStatus.Wet;
+    }
+
+    public void ChangeToRaw()
+    {
+        trashStatus = TrashStatus.Raw;
+    }
+
     public override bool TryToDropIntoSlot(IPickable pickableToDrop)
     {
         // Nothing gonna drop into the trash

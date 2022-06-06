@@ -1,4 +1,3 @@
-using System.Collections;
 using System.Collections.Generic;
 using JetBrains.Annotations;
 using Overtrashed.Model;
@@ -37,6 +36,7 @@ namespace Overtrashed.Player
                 return;
             }
             _interactables.Add(interactable);
+            Debug.Log("Interactable " + interactable.gameObject.name + "is added to the list");
         }
         private void OnTriggerExit(Collider other)
         {
@@ -55,7 +55,6 @@ namespace Overtrashed.Player
         private void FixedUpdate()
         {
             Interactable closest = TryGetClosestInteractable();
-
             if (closest == currentInteractable) return;
 
             // Something has changed

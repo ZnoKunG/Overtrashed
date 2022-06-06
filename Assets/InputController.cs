@@ -59,10 +59,10 @@ public partial class @InputController : IInputActionCollection2, IDisposable
                 {
                     ""name"": """",
                     ""id"": ""961349ed-1c25-48d4-8767-8def2c8cc897"",
-                    ""path"": ""<Keyboard>/space"",
+                    ""path"": ""<Keyboard>/e"",
                     ""interactions"": """",
                     ""processors"": """",
-                    ""groups"": ""Keyboard and Mouse;GamePad"",
+                    ""groups"": ""Keyboard and Mouse"",
                     ""action"": ""Interact"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false

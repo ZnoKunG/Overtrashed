@@ -19,6 +19,10 @@ Material:
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs:
+    - Texture2D_6c4c0b93de2945af80069bdd75e9bdb7:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - _AlphaTex:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
@@ -104,7 +108,7 @@ Material:
     - _GlossMapScale: 1
     - _Glossiness: 0.5
     - _GlossyReflections: 1
-    - _Highlight: 0
+    - _Highlight: 1
     - _Metallic: 0
     - _Mode: 0
     - _OcclusionStrength: 1
@@ -122,7 +126,7 @@ Material:
     - _ZWrite: 1
     m_Colors:
     - Color_54b355dacfba4dd888403f194c654fdb: {r: 1, g: 1, b: 1, a: 0}
-    - Color_97af0839488c45afa7aba746313f65ca: {r: 0, g: 0, b: 0, a: 0}
+    - Color_97af0839488c45afa7aba746313f65ca: {r: 0.5471698, g: 0.002580996, b: 0.002580996, a: 0}
     - _BaseColor: {r: 1, g: 1, b: 1, a: 1}
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}

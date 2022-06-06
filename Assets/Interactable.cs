@@ -33,7 +33,12 @@ namespace Overtrashed.Model
         private void CacheMeshRenderers()
         {
             var baseMesh = transform.GetComponent<MeshRenderer>();
-            if (baseMesh != null) _meshes.Add(baseMesh);
+            if (baseMesh != null)
+            {
+                _meshes.Add(baseMesh);
+                return;
+            }
+            Debug.LogWarning($"[MeshRenderer] {baseMesh.gameObject.name} baseMesh does not exist!");
         }
 
         // Recursively access each child in the baseMesh (Except the Slot)
@@ -70,6 +75,7 @@ namespace Overtrashed.Model
 
             foreach (var mesh in _meshes)
             {
+                if (mesh == null) return;
                 mesh?.SetPropertyBlock(_materialBlock);
             }
         }
@@ -84,14 +90,16 @@ namespace Overtrashed.Model
             ChangePropertyBlock(true);
             var interactable = CurrentPickable as Interactable;
             interactable?.ToggleHighlightOn();
+            Debug.Log(gameObject.name + " : ToggleHighlight On");
         }
         public virtual void ToggleHighlightOff()
         {
-            ChangePropertyBlock(true);
+            ChangePropertyBlock(false);
             var interactable = CurrentPickable as Interactable;
             interactable?.ToggleHighlightOff();
+            Debug.Log(gameObject.name + " : ToggleHighlight Off");
         }
-
+        
         public abstract bool TryToDropIntoSlot(IPickable pickableToDrop);
 
         [CanBeNull] public abstract IPickable TryToPickUpFromSlot(IPickable playerHoldPickable);
