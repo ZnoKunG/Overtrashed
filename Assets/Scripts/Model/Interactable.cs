@@ -36,6 +36,7 @@ namespace Overtrashed.Model
             if (baseMesh != null)
             {
                 _meshes.Add(baseMesh);
+                Debug.Log(baseMesh.gameObject.name + "Added into _meshes");
                 return;
             }
             Debug.LogWarning($"[MeshRenderer] {baseMesh.gameObject.name} baseMesh does not exist!");

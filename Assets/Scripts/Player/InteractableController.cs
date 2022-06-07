@@ -36,7 +36,6 @@ namespace Overtrashed.Player
                 return;
             }
             _interactables.Add(interactable);
-            Debug.Log("Interactable " + interactable.gameObject.name + "is added to the list");
         }
         private void OnTriggerExit(Collider other)
         {

@@ -299,8 +299,9 @@ GameObject:
   - component: {fileID: 5355057629446974710}
   - component: {fileID: 814891532255775770}
   - component: {fileID: 4010123995377896724}
-  - component: {fileID: 749262752241259338}
+  - component: {fileID: 1915248794}
   - component: {fileID: 882295750}
+  - component: {fileID: 6150595161687052293}
   m_Layer: 0
   m_Name: syringe
   m_TagString: Untagged
@@ -317,14 +318,13 @@ Transform:
   m_GameObject: {fileID: 6296285792789448700}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.2, y: 0.2, z: 0.2}
+  m_LocalScale: {x: 0.2, y: 0.2, z: 0.20000003}
   m_Children:
   - {fileID: 1789627612430870777}
   - {fileID: 8102077139733596963}
   - {fileID: 1688576471707017415}
   - {fileID: 1165839986398659614}
   - {fileID: 6843661213982215527}
-  - {fileID: 3107089062665851104}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -339,7 +339,7 @@ MeshCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 4
-  m_Convex: 1
+  m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 0}
 --- !u!54 &4010123995377896724
@@ -358,7 +358,7 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &749262752241259338
+--- !u!114 &1915248794
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -370,7 +370,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3be13aff5a7985145bf67e79825cfbc6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  slot: {fileID: 3107089062665851104}
+  slot: {fileID: 5355057629446974710}
   startingStatus: 3
 --- !u!23 &882295750
 MeshRenderer:
@@ -413,36 +413,14 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!1 &6914812091703116721
-GameObject:
+--- !u!33 &6150595161687052293
+MeshFilter:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 3107089062665851104}
-  m_Layer: 0
-  m_Name: Slot
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &3107089062665851104
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6914812091703116721}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 5355057629446974710}
-  m_RootOrder: 5
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_GameObject: {fileID: 6296285792789448700}
+  m_Mesh: {fileID: 0}
 --- !u!1 &7758802107114284710
 GameObject:
   m_ObjectHideFlags: 0

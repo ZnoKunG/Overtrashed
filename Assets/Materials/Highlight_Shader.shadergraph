@@ -61,9 +61,6 @@
             "m_Id": "f46d66f0c75e4e24ad29d2bffb45406a"
         },
         {
-            "m_Id": "b7c1524674fa4a8d988856789dac94c0"
-        },
-        {
             "m_Id": "0592300e3e084e50abe96f43b86ddae0"
         },
         {
@@ -286,9 +283,6 @@
             },
             {
                 "m_Id": "89447012209e4b008db87384af0d51cc"
-            },
-            {
-                "m_Id": "b7c1524674fa4a8d988856789dac94c0"
             }
         ]
     },
@@ -1619,21 +1613,6 @@
 
 {
     "m_SGVersion": 0,
-    "m_Type": "UnityEditor.ShaderGraph.Vector1MaterialSlot",
-    "m_ObjectId": "985abba5a08d48cdb9d42da01ee3ff5f",
-    "m_Id": 0,
-    "m_DisplayName": "Alpha",
-    "m_SlotType": 0,
-    "m_Hidden": false,
-    "m_ShaderOutputName": "Alpha",
-    "m_StageCapability": 2,
-    "m_Value": 1.0,
-    "m_DefaultValue": 1.0,
-    "m_Labels": []
-}
-
-{
-    "m_SGVersion": 0,
     "m_Type": "UnityEditor.ShaderGraph.BlockNode",
     "m_ObjectId": "9af3638e300c4ab5aaa591eb8a40c5ec",
     "m_Group": {
@@ -1780,39 +1759,6 @@
         "m_Guid": ""
     },
     "m_DefaultType": 0
-}
-
-{
-    "m_SGVersion": 0,
-    "m_Type": "UnityEditor.ShaderGraph.BlockNode",
-    "m_ObjectId": "b7c1524674fa4a8d988856789dac94c0",
-    "m_Group": {
-        "m_Id": ""
-    },
-    "m_Name": "SurfaceDescription.Alpha",
-    "m_DrawState": {
-        "m_Expanded": true,
-        "m_Position": {
-            "serializedVersion": "2",
-            "x": 0.0,
-            "y": 0.0,
-            "width": 0.0,
-            "height": 0.0
-        }
-    },
-    "m_Slots": [
-        {
-            "m_Id": "985abba5a08d48cdb9d42da01ee3ff5f"
-        }
-    ],
-    "synonyms": [],
-    "m_Precision": 0,
-    "m_PreviewExpanded": true,
-    "m_PreviewMode": 0,
-    "m_CustomColors": {
-        "m_SerializableColors": []
-    },
-    "m_SerializedDescriptor": "SurfaceDescription.Alpha"
 }
 
 {
@@ -2025,7 +1971,7 @@
     "m_ActiveSubTarget": {
         "m_Id": "eb0e4b31ab1046549a601b60fc678bfe"
     },
-    "m_SurfaceType": 1,
+    "m_SurfaceType": 0,
     "m_AlphaMode": 0,
     "m_TwoSided": false,
     "m_AlphaClip": false,
