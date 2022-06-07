@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5d664a143572a5c49b4056b98ff18b3f, type: 3}
+  m_Name: TrashData_JuiceBox
+  m_EditorClassIdentifier: 
+  sprite: {fileID: 0}
+  components:
+  - {fileID: 11400000, guid: 2739d1f6a9f030649997b15881c24e90, type: 2}
